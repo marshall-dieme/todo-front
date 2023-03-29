@@ -1,0 +1,28 @@
+<app-navbar></app-navbar> <br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <form class="row g-3" (ngSubmit)="onSubmit()">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Description</label>
+                            <input type="text" [(ngModel)]="todo.description" id="fistName" name="description"
+                                class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Target Date</label>
+                            <input type="date" [(ngModel)]="todo.targetDate" id="targetDate" name="targetDate"
+                                class="form-control" required>
+                        </div>
+
+                        <div class="col-auto ">
+                            <button type="submit " class="btn btn-primary mb-3 ">Update</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
